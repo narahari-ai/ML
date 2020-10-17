@@ -1,5 +1,15 @@
-# vistual environment used for installation of scrapy project
-Virtualenv .
+# virtual environment used for installation of scrapy project
+
+py -m venv venv
+
+for python2 venv should be virtualenv
+
+
+second one is folder name
+activate virtual environment by typing venv\Scripts\activate in commnad line or .\venv\Scripts\activate
+
+#install required pakages.
+py -m pip install -r requirements.txt
 
 
 Scrapy createproject webScrapping
@@ -37,6 +47,12 @@ scrapped data saved to sqllite3
 
 to save output data in json format.
 scrapy crawl app -o items.json
+
+
+after installing virtual environment packages use below command to save packages to requirements.txt
+py -m pip freeze > requirements.txt
+
+
 
 
 
